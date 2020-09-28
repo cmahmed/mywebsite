@@ -204,12 +204,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
    
     <p>Lets get in touch. Send me a message:</p>
     <form id="submit-form" action="/action_page.php" target="_blank">
-      <p><input id=" Name" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input id="Email" class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="Email"></p>
-      <p><input id="Phone number" class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone number" required name="Phone number"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="Email"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone number" required name="Phone number"></p>
 
-      <p><input id="Subject" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input id="Message" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" value="submit" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -252,7 +252,7 @@ function closeNav() {
 $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwzueJbXg2m8BT_EunbK90U1VafAXcshWwUcOV_/exec",
+                url:"https://script.google.com/macros/s/AKfycbwpC9j9t5_aD8hT_HDCTJDyKorHu34QJ5w6B2dt/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
