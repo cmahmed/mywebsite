@@ -204,12 +204,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
    
     <p>Lets get in touch. Send me a message:</p>
     <form id="submit-form" action="/action_page.php" target="_blank">
-      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></p>
-      <p><input  class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="Email" data-rule="email" data-msg="Please enter a valid email"></p>
-      <p><input  class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone number" required name="Phone number"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" name="Name" ></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" name="Email"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone number" name="Phone number"></p>
 
-      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" name="Subject"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" name="Message" ></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" value="submit" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -253,7 +253,7 @@ function closeNav() {
 $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbwpC9j9t5_aD8hT_HDCTJDyKorHu34QJ5w6B2dt/exec",
+                url:"https://script.google.com/macros/s/AKfycbyjhauijOhbQLB8HAutEkx5aIXjd5orXRmJLrEm8ZKLis39kMs/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
