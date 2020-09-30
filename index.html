@@ -204,12 +204,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
    
     <p>Lets get in touch. Send me a message:</p>
     <form id="submit-form" action="/action_page.php" target="_blank">
-      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" name="Name" required name="Name"></p>
-      <p><input  class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" name="Email" required name="Email"></p>
-      <p><input  class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone number" name="Phone number" required name="Phone number"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" name="Name" required name="Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" name="Email" required name="Email" data-rule="email" data-msg="Please enter a valid email"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone number" name="Phone number" required name="Phone number" data-rule="minlen:10" data-msg="Please enter at least 10 numbers"></p>
 
-      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" name="Subject" required name="Subject"></p>
-      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" name="Message" required name="Message"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" name="Subject" required name="Subject" data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject"></p>
+      <p><input  class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" name="Message" required name="Message" data-rule="required" data-msg="Please write something for us"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" value="submit" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
